@@ -13,6 +13,7 @@ const {theme,toggleTheme} = useContext(ThemeContext)
       <div className="flex grid-cols-1 lg:gap-10 max-w-7lx mx-auto justify-between space-x-3">
         <div className="flex items-center gap-2">
           <img src="logo.jpg" alt="Logo" className="w-12 h-12 rounded-full" />
+          <h1>I.W.D</h1>
         </div>
         <ul className="hidden lg:flex gap-4 p-4">
           <li className="hover:scale-110 transition-transform duration-300">
