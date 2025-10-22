@@ -36,7 +36,7 @@ const Products = () => {
   return (
     <div className="max-w-7xl mx-auto ">
       <h1 className="font-bold text-2xl pt-4">Web Products</h1>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <ul className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {webdata.map((product, index) => (
           <li
             key={index}

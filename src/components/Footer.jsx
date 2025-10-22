@@ -99,8 +99,8 @@ const Footer = () => {
       </div>
 
       {/* Home, About, Products, Cart */}
-      <div className="fixed bottom-0 w-full">
-        <ul className="hidden sm:flex md:flex lg:hidden justify-center gap-9 p-4 bg-sky-600 text-white w-full">
+      <div className="bottom-0 sm:w-full">
+        <ul className="hidden justify-evenly sm:flex md:flex lg:hidden gap-9 p-4 bg-sky-600 text-white w-full">
           <li className="flex flex-col items-center">
             <Link to="/" className="flex flex-col items-center">
               Home
