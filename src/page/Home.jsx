@@ -16,8 +16,8 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="grid sm:items-2xl justify-evenly items-center pt-6 pb-[30px]">
-          <div>
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-items-center pt-6 pb-[30px]">
+          <div className="lg:pt-18 text-center">
             <h1 className="text-4xl font-bold grid space-y-8">
               System Service
             </h1>
