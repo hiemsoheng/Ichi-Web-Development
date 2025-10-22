@@ -16,7 +16,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="flex justify-evenly items-center pt-6 pb-[30px]">
+        <div className="grid sm:items-2xl justify-evenly items-center pt-6 pb-[30px]">
           <div>
             <h1 className="text-4xl font-bold grid space-y-8">
               System Service
