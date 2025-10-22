@@ -9,7 +9,7 @@ const NavBar = () => {
 const {theme,toggleTheme} = useContext(ThemeContext)
 
   return (
-    <nav className="flex justify-between bg-gray-600/80 text-white p-2 w-full ">
+    <nav className="flex max-w-7lx mx-auto justify-between bg-gray-600/80 text-white p-2 w-full ">
       <div className="max-w-7lx mx-auto flex gap-x-30">
         <div className="flex items-center gap-2">
           <img src="logo.jpg" alt="Logo" className="w-12 h-12 rounded-full" />

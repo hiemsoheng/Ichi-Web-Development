@@ -18,10 +18,10 @@ const Home = () => {
       <section>
         <div className="flex justify-evenly items-center pt-6 pb-[30px]">
           <div>
-            <h1 className="text-6xl font-bold grid space-y-8">
+            <h1 className="text-4xl font-bold grid space-y-8">
               System Service
             </h1>
-            <h1 className="text-6xl font-bold grid space-y-8">& Web Service</h1>
+            <h1 className="text-4xl font-bold grid space-y-8">& Web Service</h1>
             <div className="text-2xl grid space-y-2 pt-4">
               <p>We provide reliable scalable</p>
               <p>system and web services for your</p>
