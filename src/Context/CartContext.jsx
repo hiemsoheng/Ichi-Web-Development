@@ -1,6 +1,5 @@
-import React, {useState } from "react";
-import {CartContext} from "../context/CartContext";
-
+import React, {createContext, useState } from "react";
+export const CartContext = createContext();
 
 // Create the provider
 export const CartProvider = ({ children }) => {

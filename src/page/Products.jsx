@@ -2,7 +2,7 @@
 import fetchAPI from "@/utils/fatchAPI";
 import React, { useContext, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "@/Context/CartContext";
 
 const Products = () => {
   const { addToCart } = useContext(CartContext);
