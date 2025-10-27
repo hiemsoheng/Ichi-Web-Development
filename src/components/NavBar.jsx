@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { FaCartShopping } from "react-icons/fa6";
 import { Moon, Search, Sun } from "lucide-react";
 import ThemeContext from "@/Context/ThemeContext";
+import { CartContext } from "@/Context/CartContext";
 
 const NavBar = () => {
-
-const {theme,toggleTheme} = useContext(ThemeContext)
+  const {theme, toggleTheme} = useContext(ThemeContext);
+  const {cart} = useContext(CartContext);
 
   return (
     <nav className="flex max-w-7lx mx-auto justify-between bg-gray-600/80 text-white p-2 w-full ">
@@ -37,8 +38,13 @@ const {theme,toggleTheme} = useContext(ThemeContext)
               theme =="dark"? <Sun/> : <Moon/>
             }
           </button>
-          <Link to="/Cart">
-            <FaCartShopping size={25} className="flex justify-items-end " />
+          <Link to="/Cart" className="relative">
+            <FaCartShopping size={25} className="flex justify-items-end" />
+            {cart.length > 0 && (
+              <span className="absolute -top-2 -right-2 text-red-500 rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                {cart.reduce((total, item) => total + item.quantity, 0)}
+              </span>
+            )}
           </Link>
         </div>
       </div>
