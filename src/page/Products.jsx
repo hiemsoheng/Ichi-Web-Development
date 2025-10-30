@@ -63,21 +63,21 @@ const Products = () => {
       <section id="system-products">
         <h1 className="font-bold text-2xl pt-4 pb-2">System Products</h1>
         <ul className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {systemdata.map((product) => (
+          {systemdata.map((product1) => (
             <li
-              key={product.id}
+              key={product1.id}
               className="bg-blue-200 rounded-md shadow-md flex flex-col gap-2"
             >
               <img
-                src={product.image}
-                alt={product.name}
+                src={product1.image}
+                alt={product1.name}
                 className="w-full h-70 rounded-md object-cover shadow-lg"
               />
-              <h3 className="font-bold pl-4">{product.name}</h3>
-              <p className="pl-4">{product.description}</p>
-              <p className="pl-4">${product.price}</p>
+              <h3 className="font-bold pl-4">{product1.name}</h3>
+              <p className="pl-4">{product1.description}</p>
+              <p className="pl-4">${product1.price}</p>
               <ul className="flex gap-2 pl-4">
-                {product.size.map((s, idx) => (
+                {product1.size.map((s, idx) => (
                   <li
                     key={idx}
                     className="flex justify-center items-center w-5 h-5 rounded-full bg-amber-400"
@@ -88,7 +88,7 @@ const Products = () => {
               </ul>
               <div className="flex justify-center mt-auto pb-4">
                 <button
-                  onClick={() => addToCart(product)}
+                  onClick={() => addToCart(product1)}
                   className="flex justify-evenly items-center hover:bg-blue-800 bg-black text-white py-2 px-4 rounded-md cursor-pointer"
                 >
                   <FaCartShopping size={20} className="mr-2" />
