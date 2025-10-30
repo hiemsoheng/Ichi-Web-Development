@@ -1,12 +1,13 @@
 import Banner from "@/components/Banner";
 import { MonitorUp, MonitorUpIcon, Settings } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrPtQS4-c9nU5mcu2w6f3VQG0gssWoF-Frdg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXweu8iPySOJzsQYM89MJNY3kCC7ZZmtu88A&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ_PbAeLDLwhoJW1HcMBOkrNjxSSEKZ2sXKA&s",
-    "IWD.png",
+    "https://t3.ftcdn.net/jpg/03/79/67/68/360_F_379676853_rhWrntGYANN5SdPtakjqmBePck49G5dy.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMtK6FZxIXsjL33arAPJaxcJEYguCpDj2P5g&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75z83XmQxMoSkVlSdADxGZjd3Cy6_gRinWw&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBOjmcMM_qx8-CB4UtsY2ZwqxdveGG-ovbZQ&s",
   ];
 
   return (
@@ -36,27 +37,31 @@ const Home = () => {
 
       <section>
         <div className="flex justify-evenly max-w-7xl mx-auto space-x-6 pt-[30px] text-1xl pb-5 ">
-          <div className="grid justify-items-center text-center space-y-2">
-            <Settings
-              size={2}
-              className="bg-blue-800 w-10 h-10 rounded-full p-1 text-white"
-            />
-            <h1 className="text-2xl font-bold ">System Service</h1>
-            <p>We offer robust system services</p>
-            <p>including development, mai-</p>
-            <p>tennance, and support.</p>
-          </div>
+          <Link to="/Products#system-products">
+            <div className="grid justify-items-center text-center space-y-2">
+              <Settings
+                size={2}
+                className="bg-blue-800 w-10 h-10 rounded-full p-1 text-white"
+              />
+              <h1 className="text-2xl font-bold ">System Service</h1>
+              <p>We offer robust system services</p>
+              <p>including development, mai-</p>
+              <p>tennance, and support.</p>
+            </div>
+          </Link>
 
-          <div className="grid justify-items-center text-center space-y-2">
-            <MonitorUpIcon
-              size={2}
-              className="bg-blue-800 w-10 h-10 rounded-full p-1 text-white"
-            />
-            <h1 className="text-2xl font-bold">Web Service</h1>
-            <p>Our web services are designd</p>
-            <p>to ensure seamless integration</p>
-            <p>and performance.</p>
-          </div>
+          <Link to="/Products#web-products">
+            <div className="grid justify-items-center text-center space-y-2">
+              <MonitorUpIcon
+                size={2}
+                className="bg-blue-800 w-10 h-10 rounded-full p-1 text-white"
+              />
+              <h1 className="text-2xl font-bold">Web Service</h1>
+              <p>Our web services are designd</p>
+              <p>to ensure seamless integration</p>
+              <p>and performance.</p>
+            </div>
+          </Link>
         </div>
       </section>
     </div>
